@@ -27,6 +27,6 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git checkout main
-          git add tree
+          git add .
           git commit -m "Add executable built by GitHub Action"
           git push origin main
