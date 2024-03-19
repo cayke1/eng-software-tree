@@ -1,0 +1,3 @@
+/home/runner/work/eng-software-tree/eng-software-tree/build/CMakeFiles/tree.dir
+/home/runner/work/eng-software-tree/eng-software-tree/build/CMakeFiles/edit_cache.dir
+/home/runner/work/eng-software-tree/eng-software-tree/build/CMakeFiles/rebuild_cache.dir
