@@ -20,7 +20,7 @@ jobs:
         run: cmake --build build --config Release
 
       - name: Move Executable
-        run: mv build/MeuPrograma ./MeuPrograma
+        run: mv build/tree ./tree
 
       - name: Commit Executable
         run: |
