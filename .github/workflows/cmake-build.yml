@@ -1,0 +1,31 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - develop
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Configure CMake
+        run: cmake -Bbuild -S.
+
+      - name: Build Project
+        run: cmake --build build --config Release
+
+      - name: Move Executable
+        run: mv build/MeuPrograma ./MeuPrograma
+
+      - name: Commit Executable
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add tree
+          git commit -m "Add executable built by GitHub Action"
+          git push origin main
