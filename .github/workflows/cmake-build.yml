@@ -9,15 +9,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    steps:
-
-      - name: Create and Pull main
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git checkout -b main
-          git pull origin main
-          
+    steps:       
       - name: Checkout Repository
         uses: actions/checkout@v2
 
@@ -32,6 +24,10 @@ jobs:
 
       - name: Commit Executable
         run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git checkout -b main
+          git pull origin main
           git add .
           git commit -m "Add executable built by GitHub Action"
           git push origin main
