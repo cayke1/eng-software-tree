@@ -17,6 +17,7 @@ Este projeto implementa uma estrutura de árvore em linguagem C, oferecendo um c
 - Adicionada a função add_node() no arquivo tree.c, para adicionar um nó à árvore.
 - Adicionada as funções minimum() e maximum() que retornam o último nó à esquerda e o último nó à direita da árvore, respectivamente.
 - Adicionada a função remove_node() no arquivo tree.c, para remover um nó da árvore, caso ele exista
+- Adicionada a função pre_order() no arquivo tree.c, para imprimir a árvore em pré-ordem.
 ## Contribuições
 
 Contribuições são bem-vindas! Se você deseja melhorar esta biblioteca ou adicionar novos recursos, sinta-se à vontade para enviar um pull request.
