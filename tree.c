@@ -39,3 +39,29 @@ node* search_tree(tree* arbol, int info) {
 
     return temp;
 }
+
+tree* add_node(tree* arbol, int info) {
+    if(arbol -> qty == 0) {
+        node* temp = create_node(info);
+        arbol -> qty++;
+        arbol -> root = temp;
+        return arbol;
+    } else {
+        node* temp = search_tree(arbol, info);
+        if(temp -> data == info) {
+            printf("Value already exist. Try another!\n");
+            return arbol;
+        } else {
+            node* temp2 = create_node(info);
+            if(temp -> data > info) {
+                temp -> left = temp2;
+                arbol -> qty++;
+                return arbol;
+            } else {
+                temp -> right = temp2;
+                arbol -> qty++;
+                return arbol;
+            }
+        }
+    }
+}
