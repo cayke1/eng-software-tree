@@ -26,20 +26,8 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
+          git branch main
           git checkout main
           git add tree
           git commit -m "Add executable built by GitHub Action"
-          git push origin main
-
-  create_pull_request:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-      - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v3
-        with:
-          title: "[Automated] Update main branch with executable"
-          commit-message: "Add executable built by GitHub Action"
-          branch: "main"
+          git push -f origin main
