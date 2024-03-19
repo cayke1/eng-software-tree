@@ -15,6 +15,7 @@ Este projeto implementa uma estrutura de árvore em linguagem C, oferecendo um c
 - Adicionada a função create_node() no arquivo tree.c, para alocar memória para um novo nó.
 - Adicionada a função search_tree() no arquivo tree.c, para procurar se um nó existe ou não.
 - Adicionada a função add_node() no arquivo tree.c, para adicionar um nó à árvore.
+- Adicionada as funções minimum() e maximum() que retornam o último nó à esquerda e o último nó à direita da árvore, respectivamente.
 ## Contribuições
 
 Contribuições são bem-vindas! Se você deseja melhorar esta biblioteca ou adicionar novos recursos, sinta-se à vontade para enviar um pull request.
