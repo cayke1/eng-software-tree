@@ -44,7 +44,7 @@ int main(void)
             if(temp3 -> data == temp2){
                 arbol -> qty--;
                 printf("Pre order: ");
-                PreOrder(arbol -> root);
+                pre_order(arbol -> root);
                 printf("\nQty: %d\n", arbol -> qty);
                 break;
             } else {
@@ -66,7 +66,7 @@ int main(void)
             else
             {
                 printf("\nPre Order: ");
-                PreOrder(arbol->root);
+                pre_order(arbol->root);
                 printf("\n\n");
                 break;
             }

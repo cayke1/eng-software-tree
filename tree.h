@@ -19,6 +19,6 @@ tree* add_node(tree*, int);
 node* minimum(node*);
 node* maximum(node*);
 node* remove_node(node*, int);
-void PreOrder(node*);
+void pre_order(node*);
 
 #endif
