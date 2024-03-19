@@ -18,6 +18,14 @@ Este projeto implementa uma estrutura de árvore em linguagem C, oferecendo um c
 - Adicionada as funções minimum() e maximum() que retornam o último nó à esquerda e o último nó à direita da árvore, respectivamente.
 - Adicionada a função remove_node() no arquivo tree.c, para remover um nó da árvore, caso ele exista
 - Adicionada a função pre_order() no arquivo tree.c, para imprimir a árvore em pré-ordem.
-## Contribuições
 
+## Como Usar
+
+Para utilizar esta biblioteca em seu projeto:
+
+1. **Inclua o Header**: Importe o arquivo `tree.h` em seu código para acessar as funcionalidades da árvore.
+2. **Integre a Biblioteca**: Utilize o arquivo `main.c` como ponto de partida para integrar a biblioteca à sua aplicação.
+3. **Compile e Execute**: Compile os arquivos fonte e execute seu programa para começar a utilizar a estrutura de árvore.
+
+## Contribuições
 Contribuições são bem-vindas! Se você deseja melhorar esta biblioteca ou adicionar novos recursos, sinta-se à vontade para enviar um pull request.
