@@ -19,6 +19,10 @@ Este projeto implementa uma estrutura de árvore em linguagem C, oferecendo um c
 - Adicionada a função remove_node() no arquivo tree.c, para remover um nó da árvore, caso ele exista
 - Adicionada a função pre_order() no arquivo tree.c, para imprimir a árvore em pré-ordem.
 
+## Correções
+- Corrigido erro de verificação de nó para removê-lo da árvore.
+- Corrigido erro de sintaxe da função pre_order().
+
 ## Como Usar
 
 Para utilizar esta biblioteca em seu projeto:
