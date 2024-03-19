@@ -30,28 +30,25 @@ int main(void)
             break;
 
         case 2:
-            if (arbol->qty == 0)
-            {
+            if(arbol -> qty == 0) {
                 printf("\nEmpty tree!\n");
                 break;
             }
 
             printf("Value to remove: ");
             int temp2;
+            node* temp3;
             scanf("%d", &temp2);
+            temp3 = search_tree(arbol, temp2);
 
-            if (remove_node(arbol->root, temp2) == NULL)
-            {
-                arbol->qty--;
-                printf("Tree gone!\n");
-                break;
-            }
-            else
-            {
-                arbol->qty--;
+            if(temp3 -> data == temp2){
+                arbol -> qty--;
                 printf("Pre order: ");
-                PreOrder(arbol->root);
-                printf("\nQty: %d\n", arbol->qty);
+                PreOrder(arbol -> root);
+                printf("\nQty: %d\n", arbol -> qty);
+                break;
+            } else {
+                printf("Node do not exist!\n\n");
                 break;
             }
 
