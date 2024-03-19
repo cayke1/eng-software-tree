@@ -8,3 +8,11 @@ tree* create_tree() {
     arbol -> root = NULL;
     return arbol;
 }
+
+node* create_node(int info) {
+    node* no = (node*)malloc(sizeof(node));
+    no -> data = info;
+    no -> left = NULL;
+    no -> right = NULL;
+    return no;
+}
