@@ -65,3 +65,17 @@ tree* add_node(tree* arbol, int info) {
         }
     }
 }
+
+node* minimum(node* temp) {
+    while(temp -> left != NULL) {
+        temp = temp -> left;
+    }
+    return temp;
+}
+
+node* maximum(node* temp) {
+    while(temp -> right != NULL) {
+        temp = temp -> right;
+    }
+    return temp;
+}
