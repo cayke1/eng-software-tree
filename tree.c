@@ -79,3 +79,42 @@ node* maximum(node* temp) {
     }
     return temp;
 }
+
+node* remove_node(node* temp, int info) {
+    if(temp == NULL) {
+        printf("Empty tree!\n");
+        return temp;
+    } else {
+        if(temp -> data == info) {
+            if(temp -> left == NULL && temp -> right == NULL) {
+                free(temp);
+                return NULL;
+            } else {
+                if(temp -> left == NULL || temp -> right == NULL) {
+                    node* temp2;
+                    if(temp -> left != NULL) {
+                        temp2 = temp -> left;
+                    } else {
+                        temp2 = temp -> right;
+                    }
+                    free(temp);
+                    return temp2;
+                } else {
+                    node* temp3 = temp -> left;
+                    maximum(temp3);
+                    temp -> data = temp3 -> data;
+                    temp3 -> data = info;
+                    temp -> left = remove_node(temp -> left, info);
+                }
+            }
+        } else {
+            if(temp -> data > info) {
+                temp -> left = remove_node(temp -> left, info);
+            } else {
+                temp -> right = remove_node(temp -> right, info);
+            }
+        }
+
+        return temp;
+    }
+}
