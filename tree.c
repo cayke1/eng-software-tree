@@ -16,3 +16,26 @@ node* create_node(int info) {
     no -> right = NULL;
     return no;
 }
+
+node* search_tree(tree* arbol, int info) {
+    if(arbol -> qty == 0) return NULL;
+
+    node* temp = arbol -> root;
+    do{
+        if(temp -> data > info) {
+            if(temp -> left != NULL) {
+                temp = temp -> left;
+            } else {
+                return temp;
+            }
+        } else {
+            if(temp -> right != NULL) {
+                temp = temp -> right;
+            } else {
+                return temp;
+            }
+        }
+    }while(temp -> data != info);
+
+    return temp;
+}

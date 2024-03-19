@@ -13,6 +13,7 @@ Este projeto implementa uma estrutura de árvore em linguagem C, oferecendo um c
 - Implementação inicial da estrutura básica da biblioteca tree, oferecendo um ponto de partida sólido para o desenvolvimento futuro.
 - Adicionada a função create_tree() no arquivo tree.c para criar uma nova árvore.
 - Adicionada a função create_node() no arquivo tree.c, para alocar memória para um novo nó.
+- Adicionada a função search_tree() no arquivo tree.c, para procurar se um nó existe ou não.
 
 ## Contribuições
 
