@@ -118,3 +118,11 @@ node* remove_node(node* temp, int info) {
         return temp;
     }
 }
+
+void pre_order(node* temp){
+    if(temp == NULL) return;
+
+    printf("%d ", temp -> data);
+    pre_order(temp -> left);
+    pre_order(temp -> right);
+}
