@@ -27,6 +27,7 @@ jobs:
           ls -la
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
+          git branch
           git checkout main
           git add .
           git commit -m "Add executable built by GitHub Action"
