@@ -26,8 +26,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git fetch origin main
-          git reset --hard origin/main
+          git checkout main
           git add tree
           git commit -m "Add executable built by GitHub Action"
-          git push origin main
+          git push -f origin main
