@@ -28,6 +28,6 @@ jobs:
           git config --local user.name "GitHub Action"
           git checkout -b main
           git pull --rebase origin main
-          git add .
+          git add tree
           git commit -m "Add executable built by GitHub Action"
           git push origin main
