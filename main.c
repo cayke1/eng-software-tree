@@ -42,6 +42,7 @@ int main(void)
             temp3 = search_tree(arbol, temp2);
 
             if(temp3 -> data == temp2){
+                remove_node(arbol -> root, temp2);
                 arbol -> qty--;
                 printf("Pre order: ");
                 pre_order(arbol -> root);
