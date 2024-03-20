@@ -22,6 +22,7 @@ Este projeto implementa uma estrutura de árvore em linguagem C, oferecendo um c
 ## Correções
 - Corrigido erro de verificação de nó para removê-lo da árvore.
 - Corrigido erro de sintaxe da função pre_order().
+- Corrigida falta de uma linha de código na main() para remoção dos nós.
 
 ## Como Usar
 
